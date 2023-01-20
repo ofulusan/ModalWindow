@@ -1,0 +1,37 @@
+/* モーダルウィンドウ */
+.modal {
+    display: none; /* 初期状態では非表示 */
+    position: fixed; /* スクロールしても固定される */
+    z-index: 1; /* 最前面に表示 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 画面いっぱいに表示 */
+    height: 100%; /* 画面いっぱいに表示 */
+    overflow: auto; /* スクロールバーを表示 */
+    background-color: rgb(0,0,0); /* 背景色 */
+    background-color: rgba(0,0,0,0.4); /* 背景色(透過) */
+  }
+  
+  /* モーダルウィンドウの内容 */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 中央に表示 */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* 横幅 */
+  }
+  
+  /* 閉じるボタン */
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }  
